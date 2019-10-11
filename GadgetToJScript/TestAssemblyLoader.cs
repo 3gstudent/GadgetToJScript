@@ -16,17 +16,15 @@ namespace GadgetToJScript
                 using System;
                 using System.Runtime.InteropServices;
 
-                    public class TestClass
-                    {
-                        " + "[DllImport(\"User32.dll\", CharSet = CharSet.Unicode)]" +
-                        @"public static extern int MessageBox(IntPtr h, string m, string c, int t);
-
-                        public TestClass(){
-                            " + "MessageBox((IntPtr)0, \"Test .NET Assembly Constructor Called.\", \"Coolio\", 0);" +
-                        @"}
-                    }
-            
-            ";
+ //                   public class TestClass
+ //                   {
+ //                       " + "[DllImport(\"User32.dll\", CharSet = CharSet.Unicode)]" +
+ //                       @"public static extern int MessageBox(IntPtr h, string m, string c, int t);
+ //                       public TestClass(){
+ //                           " + "MessageBox((IntPtr)0, \"Test .NET Assembly Constructor Called.\", \"Coolio\", 0);" +
+ //                       @"}
+ //                   }           
+ //           ";
 
             CSharpCodeProvider provider = new CSharpCodeProvider();
             CompilerParameters parameters = new CompilerParameters();
@@ -34,8 +32,9 @@ namespace GadgetToJScript
             parameters.ReferencedAssemblies.Add("System.dll");
 
 
-            CompilerResults results = provider.CompileAssemblyFromSource(parameters, _testClass);
+//            CompilerResults results = provider.CompileAssemblyFromSource(parameters, _testClass);
 
+            CompilerResults results = provider.CompileAssemblyFromFile(parameters, "payload.txt");
             if (results.Errors.HasErrors)
             {
                 StringBuilder sb = new StringBuilder();
