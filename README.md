@@ -8,6 +8,9 @@ Now TestAssemblyLoader.cs will load the payload from payload.txt and you don't h
 I have added a payload.txt as an example and it can be combined with [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)!
 
 ---
+---
+
+
 
 ## Description
 A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS based scripts.
