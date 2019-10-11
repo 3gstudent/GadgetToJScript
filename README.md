@@ -1,9 +1,11 @@
 
-Small change to make it easier to test the payload.
+## Small change to make it easier to test the payload.
 
+I have modified TestAssemblyLoader.cs to make it easier to test the payload.
 
+Now TestAssemblyLoader.cs will load the payload from payload.txt and you don't have to think about escaping characters anymore.
 
-
+I have added a payload.txt as an example and it can be combined with [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)!
 
 ---
 
