@@ -1,0 +1,14 @@
+using System;
+using System.Runtime.InteropServices;
+public class TestClass
+{
+	[DllImport("User32.dll", CharSet = CharSet.Unicode)]public static extern int MessageBox(IntPtr h, string m, string c, int t);
+	public TestClass()
+	{
+		MessageBox((IntPtr)0, "Test .NET Assembly Constructor Called2.", "Coolio", 0);
+		System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = "cmd.exe";
+		process.StartInfo.Arguments = "/c start calc.exe";
+                process.Start();
+        }
+}
