@@ -1,7 +1,7 @@
 
 ## My change
 
-### 1.Small change to make it easier to test the payload.
+### 1.Small change to make it easier to test the payload and combine it with [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 
 I have modified TestAssemblyLoader.cs to make it easier to test the payload.
 
