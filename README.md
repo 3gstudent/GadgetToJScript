@@ -1,3 +1,12 @@
+
+Small change to make it easier to test the payload.
+
+
+
+
+
+---
+
 ## Description
 A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS based scripts.
 <br>The gadget being used triggers a call to Assembly.Load when deserialized via jscript/vbscript, this means it can be used in the same way to trigger in-memory load of your own shellcode loader at runtime.
