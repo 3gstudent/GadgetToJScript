@@ -22,9 +22,9 @@ namespace GadgetToJScript
  //                       @"public static extern int MessageBox(IntPtr h, string m, string c, int t);
  //                       public TestClass(){
  //                           " + "MessageBox((IntPtr)0, \"Test .NET Assembly Constructor Called.\", \"Coolio\", 0);" +
- //                       @"}
- //                   }           
- //           ";
+                        @"}
+                    }           
+            ";
 
             CSharpCodeProvider provider = new CSharpCodeProvider();
             CompilerParameters parameters = new CompilerParameters();
